@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 1140px;
   margin: 0 auto;
   padding: 0;
@@ -119,10 +119,10 @@ body {
 }
 .plant-lover-content{
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
-.plant-image img{
+.plants-image img{
     width: 540px;
     height: 597px;
     background: linear-gradient(180.00deg, rgba(103, 171, 234, 0.24),rgba(233, 90, 8, 0.6) 100%);
@@ -207,4 +207,29 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* plant section */
+    .plants-lover-container{
+        margin-top: 20px;
+    }
+    .trust-image img{
+        display: none;
+    }
+    .plant-lover-content{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .plants-image img{
+        height: 100%;
+        width: 100%
+    }
+
+    .plants-text h2{
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .plants-text ul li{
+        font-size: 14px;
+    }
 }
