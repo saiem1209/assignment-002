@@ -238,6 +238,54 @@ body {
     font-size: 26px;
 }
 
+/* news letter section */
+
+.news-letter{
+    height: 533px;
+    margin-top: 20px;
+    background:linear-gradient( rgba(7, 51, 79, 0.4)) ,url(../assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.news-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    height: 100vh;          
+
+}
+
+.news-title{
+    color: rgb(255, 255, 255);
+    font-family: Noto Serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+.newsletter-button{
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.newsletter-button input{
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.newsletter-button button{
+    background-color: #e95a08;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* Responsive Part for 576px*/
 
@@ -351,6 +399,22 @@ body {
         height: 200px;
         font-size: 16px;
         text-align: center;
+    }
+
+    /* news letter section */
+    .news-letter{
+        height: 275px;
+        width: 1005;
+    }
+    .news-container{ 
+        height: 100%;          
+
+    }
+    .news-title{
+        font-size: 20px;
+    }
+    .newsletter-button{
+        padding: 0 15px;
     }
 
 }
