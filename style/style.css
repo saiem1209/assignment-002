@@ -153,6 +153,92 @@ body {
     left: 400px;
 }
 
+/* latest-deal section */
+
+.latest-deal-text h2{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.latest-deal-text p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+.text-box-container{
+    display: flex;
+    gap: auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.first-second{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+.first-text-box{
+    width: 400px;
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4)), url(/assets/deal-bloom.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 17px;
+}
+.second-text-box{
+    width: 400px;
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4)), url(/assets/deal-ana.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 17px;
+}
+.third-text-box{
+    width: 753px;
+    height: 432px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4)), url(/assets/deal-zabo.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 17px;
+}
+
+.first-text-box h2, .second-text-box h2{
+    color: rgb(255, 255, 255);
+    font-family: Noto Serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.first-text-box a, .second-text-box a, a{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.third-text-box{
+    color: rgb(255, 255, 255);
+    font-family: Noto Serif;
+    font-size: 26px;
+}
+
+
 /* Responsive Part for 576px*/
 
 @media screen and (max-width:576px) {
@@ -231,5 +317,24 @@ body {
     }
     .plants-text ul li{
         font-size: 14px;
+    }
+
+    /* Latest deal section */
+    .text-box-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .third-text-box{
+        width: 400px;
+        height: 206px;
+        font-size: 16px;
+    }
+
+    .first-second{
+        height: 100%;
+        /* width: 100%; */
     }
 }
